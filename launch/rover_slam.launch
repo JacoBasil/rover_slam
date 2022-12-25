@@ -1,0 +1,5 @@
+<launch>
+	<node pkg="gmapping" type="slam_gmapping" name="rover_slam_gmapping" output="screen">
+		<rosparam command="load" file="$(find rover_slam)/config/gmapping_params.yaml"/>
+	</node>
+</launch>
